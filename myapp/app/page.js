@@ -23,7 +23,8 @@ export default function Home() {
       {/* Hero Section */}
      <section
   className="bg-cover bg-center text-white py-32 px-6 text-center"
-  style={{ backgroundImage: "url('/bg2.jpg')" }} // Replace with your actual image path
+  
+   // Replace with your actual image path
 >
   <div className="bg-transparent bg-opacity-50 p-9 rounded-lg max-w-2xl mx-auto">
     <h1 className="text-4xl md:text-5xl font-bold mb-4">
