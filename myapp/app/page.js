@@ -26,6 +26,7 @@ export default function Home() {
   
    // Replace with your actual image path
 >
+  
   <div className="bg-transparent bg-opacity-50 p-9 rounded-lg max-w-2xl mx-auto">
     <h1 className="text-4xl md:text-5xl font-bold mb-4">
       Professional Vehicle Inspection Services
