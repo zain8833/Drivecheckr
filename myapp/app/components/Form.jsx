@@ -1,6 +1,5 @@
-// app/components/Form.jsx
-
 "use client";
+
 import { useState } from "react";
 import emailjs from "emailjs-com";
 
