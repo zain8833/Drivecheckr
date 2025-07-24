@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
-    import emailjs from "emailjs-com";
+import emailjs from "emailjs-com";
+import Navbar from "../components/Navbar";
 
 export default function PaymentPage() {
   const [status, setStatus] = useState("");
@@ -22,7 +23,10 @@ export default function PaymentPage() {
   };
 
   return (
+    
+    
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50 p-6">
+       
       <h2 className="text-2xl font-bold mb-6">Payment Form</h2>
       <form onSubmit={handleSubmit} className="space-y-4 w-full max-w-md">
         <input name="name" placeholder="Full Name" className="border p-2 w-full" required />
