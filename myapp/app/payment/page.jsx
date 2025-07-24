@@ -26,7 +26,7 @@ export default function PaymentPage() {
       <h2 className="text-2xl font-bold mb-6">Payment Form</h2>
       <form onSubmit={handleSubmit} className="space-y-4 w-full max-w-md">
         <input name="name" placeholder="Full Name" className="border p-2 w-full" required />
-        <input name="email" placeholder="Email" className="border p-2 w-full" required />
+        <input name="VIN number" placeholder="VIN Number" className="border p-2 w-full" required />
         <input name="package" placeholder="Selected Package" className="border p-2 w-full" required />
         <input name="card" placeholder="Card Info (demo)" className="border p-2 w-full" required />
         <button type="submit" className="bg-blue-600 text-white px-4 py-2 w-full">Submit Payment</button>
