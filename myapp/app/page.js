@@ -37,7 +37,7 @@ export default function Home() {
       className="flex flex-col md:flex-row justify-center gap-4 max-w-lg mx-auto"
     >
       <input
-        type="email"
+        type="text"
         name="email"
         required
         placeholder="Enter VIN number"
@@ -62,7 +62,7 @@ export default function Home() {
           <div className="bg-gray-100 shadow hover:shadow-lg p-8 rounded-lg w-full md:w-1/3 transition">
             <h3 className="text-xl font-semibold mb-2">🚗 Basic Inspection</h3>
             <p className="mb-4 text-gray-700">Covers engine, lights, brakes, and essential safety checks.</p>
-            <p className="text-lg font-bold mb-4">$49.99</p>
+            <p className="text-lg font-bold mb-4">$39.99</p>
             <Link href="/payment">
               <button className="bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-800">Book Now</button>
             </Link>
@@ -70,10 +70,11 @@ export default function Home() {
           <div className="bg-gray-100 shadow hover:shadow-lg p-8 rounded-lg w-full md:w-1/3 transition">
             <h3 className="text-xl font-semibold mb-2">🔧 Full Diagnostic</h3>
             <p className="mb-4 text-gray-700">Includes everything in Basic + transmission & emissions check.</p>
-            <p className="text-lg font-bold mb-4">$89.99</p>
+            <p className="text-lg font-bold mb-4">$59.99</p>
             <Link href="/payment">
               <button className="bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-800">Book Now</button>
             </Link>
+            
           </div>
         </div>
       </section>
