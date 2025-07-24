@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-// import emailjs from "emailjs-com";
+    import emailjs from "emailjs-com";
 
 export default function PaymentPage() {
   const [status, setStatus] = useState("");

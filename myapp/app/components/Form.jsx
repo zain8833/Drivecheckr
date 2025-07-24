@@ -26,7 +26,7 @@ export default function Form() {
   return (
     <form onSubmit={sendEmail} className="space-y-4 max-w-lg mx-auto">
       <input name="name" placeholder="Your Name" className="border p-2 w-full" required />
-      <input name="email" placeholder="Email" className="border p-2 w-full" required />
+      <input name="text" placeholder="VIN Number" className="border p-2 w-full" required />
       <textarea name="message" placeholder="Your Message" className="border p-2 w-full" required />
       <button className="bg-blue-700 text-white px-4 py-2">Send</button>
       <p>{status}</p>

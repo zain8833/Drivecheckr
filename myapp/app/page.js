@@ -22,14 +22,14 @@ export default function Home() {
 
       {/* Hero Section */}
      <section
-  className="bg-cover bg-center text-white py-32 px-6 text-center"
+  className="bg-cover bg-center text-white py-32 px-9 text-center"
   style={{ backgroundImage: "url('/bg2.jpg')" }} // Replace with your actual image path
 >
-  <div className="bg-black/70 bg-opacity-50 p-8 rounded-lg max-w-2xl mx-auto">
-    <h1 className="text-4xl md:text-5xl font-bold mb-4">
+  <div className="bg-black/70 bg-opacity-50 p-9 rounded-lg max-w-2xl mx-auto">
+    <h1 className="text-5xl md:text-6xl font-bold mb-4">
       Professional Vehicle Inspection Services
     </h1>
-    <p className="text-lg mb-6">
+    <p className="text-lg mb-7">
       Get a detailed and certified vehicle check with just a few clicks.
     </p>
     <form
@@ -43,11 +43,11 @@ export default function Home() {
         placeholder="Enter VIN number"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
-        className="p-3 rounded text-white w-full md:w-2/3"
+        className="p-3 rounded border-1 text-white w-full md:w-2/3"
       />
       <button
         type="submit"
-        className="bg-white text-blue-700 font-bold px-6 py-3 rounded hover:bg-blue-100 transition"
+        className="bg-white text-blue-700 font-bold px-7 py-4 rounded hover:bg-blue-100 transition"
       >
         Start Now
       </button>
