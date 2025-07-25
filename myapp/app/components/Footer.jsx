@@ -1,4 +1,3 @@
-// app/components/FooterNavbar.jsx
 
 import Link from "next/link";
 
