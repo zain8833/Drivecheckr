@@ -18,7 +18,7 @@ export default function Home() {
 
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
 
       {/* Hero Section */}
      <section
@@ -105,7 +105,7 @@ export default function Home() {
         <Form />
       </section>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

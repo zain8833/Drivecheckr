@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function FooterNavbar() {
   return (
-    <footer className="bg-blue-500 text-white text-center py-6">
+    <footer className="bg-blue-600 text-white text-center py-6">
       {/* Top links row */}
       <div className="flex flex-wrap justify-center space-x-6 text-sm mb-4">
         <Link href="/privacy" className="hover:underline">Privacy</Link>
