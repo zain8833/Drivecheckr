@@ -1,7 +1,7 @@
 "use client";
 
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+// import Navbar from "./components/Navbar";
+// import Footer from "./components/Footer";
 import Form from "./components/Form";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
