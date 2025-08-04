@@ -14,7 +14,7 @@ export default function Home() {
 
   const handleEmailSubmit = (e) => {
     e.preventDefault();
-    router.push("/"); // You can change to `/form` page if you build one separately
+    router.push("/services"); // You can change to `/form` page if you build one separately
   };
 
   return (
