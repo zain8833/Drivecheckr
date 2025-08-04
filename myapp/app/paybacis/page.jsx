@@ -17,7 +17,7 @@ export default function Home() {
         'service_uvlb4sv',
         'template_j0iwhrm',
         formRef.current,
-        'vAOFTv3WLNTiP2zZb'
+        'f-OZlQIt2bm7DnrmH'
       )
       .then(
         (result) => {
@@ -43,7 +43,7 @@ export default function Home() {
               <h2 className="text-xl font-bold mb-4">Fill The Form To Proceed.....</h2>
 
               <form ref={formRef} onSubmit={sendEmail} className="space-y-4">
-                <input
+               <input
     name="full_name"
     type="text"
     placeholder="Full Name"
@@ -94,9 +94,9 @@ export default function Home() {
   />     */}
                 <button
                   type="submit"
-                  className="w-full bg-red-600 text-white py-2 rounded hover:bg-red-700"
+                  className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700"
                 >
-                  Send Report
+                  Get Report
                 </button>
               </form>
 
@@ -104,10 +104,10 @@ export default function Home() {
               {showPayment && (
                 <div className="mt-6 text-center">
                   <a
-                    href="https://pay.pioneer.app/your-link" // 🔁 Replace with your actual link
+                    href="" // 🔁 Replace with your actual link
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700"
+                    className="inline-block bg-red-600 text-white px-6 py-2 rounded hover:bg-redx-700"
                   >
                     Proceed to Payment
                   </a>
@@ -117,7 +117,7 @@ export default function Home() {
           </div>
 
           {/* Right Section remains unchanged */}
-          {/* <div className="md:w-2/5">
+          <div className="md:w-2/5">
             <div className="bg-white p-6 border rounded">
               <h3 className="text-lg mb-4">With Drive Checkr you may get</h3>
 
@@ -140,17 +140,17 @@ export default function Home() {
 
                 <div className="border w-100 rounded-2xl">
                   <div className="flex items-center mb-4 mt-4 ml-4">
-                    {/* <input type="checkbox" id="checkbox" className="mr-2 h-5 w-5" />
-                    <label htmlFor="checkbox" className="font-medium">Check Report</label> */}
-                  {/* </div>
+                    {/* <input type="checkbox" id="checkbox" className="mr-2 h-5 w-5" /> */}
+                    {/* <label htmlFor="checkbox" className="font-medium">Check Report</label> */}
+                  </div>
 
                   <div className="mb-2 mt-4 ml-4">
-                    <span className="text-2xl font-bold">$59.99</span>
+                    <span className="text-2xl font-bold">$39.99</span>
                     <span className="text-1xl font-bold"> report</span>
                   </div>
 
                   <div className="text-sm mb-1 mt-2 ml-4">
-                    You pay $59.99 <span className="line-through">$70.00</span>
+                    You pay $39.99 <span className="line-through">$50.00</span>
                   </div>
 
                   <div className="bg-red-300 text-red-700 w-16 text-center py-1 mb-4 mt-2 ml-4 rounded">
@@ -170,12 +170,12 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="mt-4 flex justify-center">
+            {/* <div className="mt-4 flex justify-center">
               <button className="bg-red-400 hover:bg-red-500 text-black px-6 py-2 rounded font-medium">
                 Get Report
               </button>
-            </div>
-          </div> */} 
+            </div> */}
+          </div>
         </div>
       </div>
     </div>

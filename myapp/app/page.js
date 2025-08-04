@@ -14,7 +14,7 @@ export default function Home() {
 
   const handleEmailSubmit = (e) => {
     e.preventDefault();
-    router.push("/payment"); // You can change to `/form` page if you build one separately
+    router.push("/"); // You can change to `/form` page if you build one separately
   };
 
   return (
@@ -122,7 +122,7 @@ export default function Home() {
                   ))}
                 </ul>
             <p className="text-lg font-bold mb-4">$39.99</p>
-            <Link href="/payment">
+            <Link href="/paybacis">
               <button className="bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-800">Book Now</button>
             </Link>
           </div>
@@ -156,7 +156,7 @@ export default function Home() {
                   ))}
                 </ul>
             <p className="text-lg font-bold mb-4">$59.99</p>
-            <Link href="/payment">
+            <Link href="/paypremium"> 
               <button className="bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-800">Book Now</button>
             </Link>
             

@@ -94,7 +94,7 @@ export default function Home() {
   />     */}
                 <button
                   type="submit"
-                  className="w-full bg-red-600 text-white py-2 rounded hover:bg-red-700"
+                  className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700"
                 >
                   Send Report
                 </button>
@@ -117,7 +117,7 @@ export default function Home() {
           </div>
 
           {/* Right Section remains unchanged */}
-          {/* <div className="md:w-2/5">
+          <div className="md:w-2/5">
             <div className="bg-white p-6 border rounded">
               <h3 className="text-lg mb-4">With Drive Checkr you may get</h3>
 
@@ -142,7 +142,7 @@ export default function Home() {
                   <div className="flex items-center mb-4 mt-4 ml-4">
                     {/* <input type="checkbox" id="checkbox" className="mr-2 h-5 w-5" />
                     <label htmlFor="checkbox" className="font-medium">Check Report</label> */}
-                  {/* </div>
+                  </div>
 
                   <div className="mb-2 mt-4 ml-4">
                     <span className="text-2xl font-bold">$59.99</span>
@@ -170,12 +170,12 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="mt-4 flex justify-center">
+            {/* <div className="mt-4 flex justify-center">
               <button className="bg-red-400 hover:bg-red-500 text-black px-6 py-2 rounded font-medium">
                 Get Report
               </button>
-            </div>
-          </div> */} 
+            </div> */}
+          </div>
         </div>
       </div>
     </div>
