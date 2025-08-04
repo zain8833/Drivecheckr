@@ -62,7 +62,7 @@ export default function Home() {
     
     {/* Box 1 */}
     <div className="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
-      <img src="/path-to-icons/insight.png" alt="Vehicle Insight" className="mx-auto mb-4 h-16" />
+      <img src="images/box1.png" alt="Vehicle Insight" className="mx-auto mb-4 h-16" />
       <h3 className="text-xl font-semibold mb-2">Vehicle Insight & History</h3>
       <p className="text-gray-700">
         Discover the full story of your vehicle with a comprehensive VIN Check report. Get detailed information about the car’s specifications, including its make, model, year, body style, color, and country of assembly. Dive into its history with records on odometer readings, smog checks, fuel type, and engine size.
@@ -71,7 +71,7 @@ export default function Home() {
 
     {/* Box 2 */}
     <div className="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
-      <img src="/path-to-icons/repair.png" alt="Accident Records" className="mx-auto mb-4 h-16" />
+      <img src="images/box2-removebg-preview.png" alt="Accident Records" className="mx-auto mb-4 h-16" />
       <h3 className="text-xl font-semibold mb-2">Accident & Repair Records</h3>
       <p className="text-gray-700">
         Uncover the past of any vehicle with our VIN lookup tool. Access detailed reports on accidents, major repairs, and service history. Stay informed with data on manufacturer recalls, lien records, salvage information, and more, ensuring you're aware of any potential red flags.
@@ -80,7 +80,7 @@ export default function Home() {
 
     {/* Box 3 */}
     <div className="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
-      <img src="/path-to-icons/fraud.png" alt="Ownership Protection" className="mx-auto mb-4 h-16" />
+      <img src="images/box3.png" alt="Ownership Protection" className="mx-auto mb-4 h-16" />
       <h3 className="text-xl font-semibold mb-2">Ownership & Fraud Protection</h3>
       <p className="text-gray-700">
         Safeguard your investment with a deep dive into the vehicle’s title records and ownership history. Learn about previous owners, registration details, mileage records, and any branded title alerts. Plus, ensure peace of mind with theft and fraud detection checks.
