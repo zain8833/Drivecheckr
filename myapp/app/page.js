@@ -7,6 +7,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
+
 export default function Home() {
   const [email, setEmail] = useState("");
   const router = useRouter();
@@ -54,6 +55,41 @@ export default function Home() {
     </form>
   </div>
 </section>
+<section className="py-12 bg-white">
+  <h2 className="text-3xl font-bold text-center mb-10">Discover What's Included in Your Vehicle Record</h2>
+  
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4 md:px-16">
+    
+    {/* Box 1 */}
+    <div className="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
+      <img src="/path-to-icons/insight.png" alt="Vehicle Insight" className="mx-auto mb-4 h-16" />
+      <h3 className="text-xl font-semibold mb-2">Vehicle Insight & History</h3>
+      <p className="text-gray-700">
+        Discover the full story of your vehicle with a comprehensive VIN Check report. Get detailed information about the car’s specifications, including its make, model, year, body style, color, and country of assembly. Dive into its history with records on odometer readings, smog checks, fuel type, and engine size.
+      </p>
+    </div>
+
+    {/* Box 2 */}
+    <div className="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
+      <img src="/path-to-icons/repair.png" alt="Accident Records" className="mx-auto mb-4 h-16" />
+      <h3 className="text-xl font-semibold mb-2">Accident & Repair Records</h3>
+      <p className="text-gray-700">
+        Uncover the past of any vehicle with our VIN lookup tool. Access detailed reports on accidents, major repairs, and service history. Stay informed with data on manufacturer recalls, lien records, salvage information, and more, ensuring you're aware of any potential red flags.
+      </p>
+    </div>
+
+    {/* Box 3 */}
+    <div className="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
+      <img src="/path-to-icons/fraud.png" alt="Ownership Protection" className="mx-auto mb-4 h-16" />
+      <h3 className="text-xl font-semibold mb-2">Ownership & Fraud Protection</h3>
+      <p className="text-gray-700">
+        Safeguard your investment with a deep dive into the vehicle’s title records and ownership history. Learn about previous owners, registration details, mileage records, and any branded title alerts. Plus, ensure peace of mind with theft and fraud detection checks.
+      </p>
+    </div>
+
+  </div>
+</section>
+
 
       {/* Services Section */}
       <section id="services" className="py-20 bg-white text-center">
@@ -61,7 +97,30 @@ export default function Home() {
         <div className="flex flex-col md:flex-row justify-center gap-8 px-4">
           <div className="bg-gray-100 shadow hover:shadow-lg p-8 rounded-lg w-full md:w-1/3 transition">
             <h3 className="text-xl font-semibold mb-2">🚗 Basic Inspection</h3>
-            <p className="mb-4 text-gray-700">Covers engine, lights, brakes, and essential safety checks.</p>
+            <ul className="text-left text-sm space-y-3 text-black">
+                  {[
+                    "Vehicle Overview",
+                    "Market Value",
+                    "Vehicle Specifications",
+                    "Sales Listing",
+                    "Accident Record",
+                    "Theft Record",
+                    "Open Recalls",
+                    "Impounds",
+                    "HQ Car Images",
+                    "Active & Expired Warranties",
+                    "Installed Options and Packages"
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-start space-x-3">
+                      <img
+                        src="images/tick1.png"
+                        alt="check"
+                        className="w-5 h-5 mt-1"
+                      />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
             <p className="text-lg font-bold mb-4">$39.99</p>
             <Link href="/payment">
               <button className="bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-800">Book Now</button>
@@ -69,7 +128,33 @@ export default function Home() {
           </div>
           <div className="bg-gray-100 shadow hover:shadow-lg p-8 rounded-lg w-full md:w-1/3 transition">
             <h3 className="text-xl font-semibold mb-2">🔧 Full Diagnostic</h3>
-            <p className="mb-4 text-gray-700">Includes everything in Basic + transmission & emissions check.</p>
+             <ul className="text-left text-sm space-y-3 text-black">
+                  {[
+                     "Vehicle Specifications",
+                    "Market Value",
+                    "Accident Record",
+                    "Salvage",
+                    "Theft Record",
+                    "Vehicle Overview",
+                    "Impounds",
+                    "Open Recalls",
+                    "Exports",
+                    "Sales Listing",
+                    "Active & Expired Warranties",
+                    "Installed Options and Packages",
+                    "Title Record",
+                    "Title Brand" 
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-start space-x-3">
+                      <img
+                        src="images/tick1.png"
+                        alt="check"
+                        className="w-5 h-5 mt-1"
+                      />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
             <p className="text-lg font-bold mb-4">$59.99</p>
             <Link href="/payment">
               <button className="bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-800">Book Now</button>
