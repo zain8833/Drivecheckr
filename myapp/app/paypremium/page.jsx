@@ -71,7 +71,7 @@ export default function Home() {
     required
     className="w-full p-3 border rounded"
   />
-  <input
+  {/* <input
     name="address"
     type="text"
     placeholder="Address"
@@ -130,7 +130,7 @@ export default function Home() {
       {country}
     </option>
   ))}
-</select>
+</select> */}
                 <button
                   type="submit"
                   className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700"

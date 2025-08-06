@@ -1,20 +1,38 @@
-// app/layout.jsx
+import Script from "next/script";
 import "./globals.css";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer"; // or FooterNavbar if you're using that version
+import FooterNavbar from "./components/Footer";
 
 export const metadata = {
-  title: "Vehicle Inspection",
-  description: "Professional Vehicle Inspection Website",
+  title: "Drivecheckr",
+  description: "Your vehicle inspection assistant",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-white text-black">
-        <Navbar />
-        <main className="min-h-screen">{children}</main>
-        <Footer />
+      <body>
+        <Navbar/>
+        {children}
+
+        {/* Crisp Live Chat Script */}
+        <Script
+          id="crisp-chat"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.$crisp = [];
+              window.CRISP_WEBSITE_ID = "9529aac1-4ec9-498b-ae5b-bb34afbf6dd6";
+              (function () {
+                var d = document;
+                var s = d.createElement("script");
+                s.src = "https://client.crisp.chat/l.js";
+                s.async = 1;
+                d.getElementsByTagName("head")[0].appendChild(s);
+              })();`,
+          }}
+        />
+        <FooterNavbar/>
       </body>
     </html>
   );

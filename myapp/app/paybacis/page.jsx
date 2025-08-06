@@ -71,7 +71,7 @@ export default function Home() {
   required
   className="w-full p-3 border rounded"
 />
-<input
+{/* <input
   name="address"
   type="text"
   placeholder="Address"
@@ -131,7 +131,7 @@ export default function Home() {
       {country}
     </option>
   ))}
-</select>
+</select> */}
 
                 <button
                   type="submit"

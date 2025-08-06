@@ -18,7 +18,11 @@ export default function Home() {
   };
 
   return (
+    
     <div>
+      <div>
+        
+      </div>
       {/* <Navbar /> */}
 
       {/* Hero Section */}
@@ -170,7 +174,7 @@ export default function Home() {
         <div className="max-w-3xl mx-auto text-left space-y-6">
           <div>
             <h4 className="font-semibold text-lg">⏱ How long does an inspection take?</h4>
-            <p className="text-gray-700">Usually 45–60 minutes depending on the type of vehicle.</p>
+            <p className="text-gray-700">Usually Basic Ones take 3 to 4 Hours and Full Diagnostic takes 1 to 2 Hours.</p>
           </div>
           <div>
             <h4 className="font-semibold text-lg">🛻 Do you provide mobile inspections?</h4>
