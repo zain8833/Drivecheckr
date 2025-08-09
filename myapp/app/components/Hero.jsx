@@ -1,0 +1,80 @@
+
+import React from 'react'
+
+function Hero() {
+  return (
+    <div>
+    <section
+  className="bg-cover bg-center text-white py-32 px-9 text-center"
+  style={{ backgroundImage: "url('/bg2.jpg')" }} // Replace with your actual image path
+>
+  <div className="bg-black/70 bg-opacity-50 p-9 rounded-lg max-w-2xl mx-auto">
+    <h1 className="text-5xl md:text-6xl font-bold mb-4">
+      Professional Vehicle Inspection Services
+    </h1>
+    <p className="text-lg mb-7">
+      Get a detailed and certified vehicle check with just a few clicks.
+    </p>
+    <form
+      onSubmit={handleEmailSubmit}
+      className="flex flex-col md:flex-row justify-center gap-4 max-w-lg mx-auto"
+    >
+      <input
+        type="text"
+        name="email"
+        required
+        placeholder="Enter VIN number"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        className="p-3 rounded border-1 text-white w-full md:w-2/3"
+      />
+      <button
+        type="submit"
+        className="bg-white text-blue-700 font-bold px-7 py-4 rounded hover:bg-blue-100 transition"
+      >
+        Start Now
+      </button>
+    </form>
+  </div>
+</section>
+<section className='py-12 bg-white'>
+    {/* <section className="py-12 bg-white"> */}
+  <h2 className="text-3xl font-bold text-center mb-10">Discover What's Included in Your Vehicle Record</h2>
+  
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4 md:px-16"></div>
+</section>
+
+    {/* Box 1 */}
+    <div className="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
+      <img src="images/box1.png" alt="Vehicle Insight" className="mx-auto mb-4 h-16" />
+      <h3 className="text-xl font-semibold mb-2">Vehicle Insight & History</h3>
+      <p className="text-gray-700">
+        Discover the full story of your vehicle with a comprehensive VIN Check report. Get detailed information about the car’s specifications, including its make, model, year, body style, color, and country of assembly. Dive into its history with records on odometer readings, smog checks, fuel type, and engine size.
+      </p>
+    </div>
+
+    {/* Box 2 */}
+    <div className="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
+      <img src="images/box2-removebg-preview.png" alt="Accident Records" className="mx-auto mb-4 h-16" />
+      <h3 className="text-xl font-semibold mb-2">Accident & Repair Records</h3>
+      <p className="text-gray-700">
+        Uncover the past of any vehicle with our VIN lookup tool. Access detailed reports on accidents, major repairs, and service history. Stay informed with data on manufacturer recalls, lien records, salvage information, and more, ensuring you're aware of any potential red flags.
+      </p>
+    </div>
+
+    {/* Box 3 */}
+    <div className="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
+      <img src="images/box3.png" alt="Ownership Protection" className="mx-auto mb-4 h-16" />
+      <h3 className="text-xl font-semibold mb-2">Ownership & Fraud Protection</h3>
+      <p className="text-gray-700">
+        Safeguard your investment with a deep dive into the vehicle’s title records and ownership history. Learn about previous owners, registration details, mileage records, and any branded title alerts. Plus, ensure peace of mind with theft and fraud detection checks.
+      </p>
+    </div>
+
+  </div>
+// </div>
+
+  )
+}
+
+export default Hero
