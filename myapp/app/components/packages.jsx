@@ -1,6 +1,7 @@
 import React from 'react'
+import Link from 'next/link'
 
-function packages() {
+function Packages() {
   return (
     <div>
         <section id="services" className="py-20 bg-white text-center">
@@ -78,4 +79,4 @@ function packages() {
   )
 }
 
-export default packages
+export default Packages

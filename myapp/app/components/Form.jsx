@@ -3,7 +3,7 @@
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
-export default function Home() {
+export default function Form() {
   const formRef = useRef(null);
   const [showPayment, setShowPayment] = useState(false);
 
