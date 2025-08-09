@@ -2,6 +2,13 @@
 import React from 'react'
 
 function Hero() {
+    const [email, setEmail] = useState("");
+  const router = useRouter();
+
+  const handleEmailSubmit = (e) => {
+    e.preventDefault();
+    router.push("/services"); // You can change to `/form` page if you build one separately
+  };
   return (
     <div>
     <section
