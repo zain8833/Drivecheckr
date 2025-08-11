@@ -143,10 +143,10 @@ export default function Home() {
               {showPayment && (
                 <div className="mt-6 text-center">
                   <a
-                    href="https://www.paypal.com/ncp/payment/MB9NW2S3H5KGY" // 🔁 Replace with your actual link
+                    href="https://www.paypal.com/ncp/payment/2C5UAGX572W3A" // 🔁 Replace with your actual link
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700"
+                    className="inline-block bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700"
                   >
                     Proceed to Payment
                   </a>
